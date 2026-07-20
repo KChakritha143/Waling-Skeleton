@@ -1,4 +1,4 @@
-# Waling-Skeleton
+# Walking-Skeleton
 # Secure Authentication & JWT Integration
 
 ## Project Overview
@@ -248,7 +248,8 @@ http://localhost:5173
 ## Live deployment
 
 Froentend : https://waling-skeleton.vercel.app/login
-Backend : 
+Backend : https://waling-skeleton-4.onrender.com/
+
 ## Testing
 
 Authentication routes can be tested using:
