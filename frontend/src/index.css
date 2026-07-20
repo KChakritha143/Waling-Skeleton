@@ -2,8 +2,7 @@
 
 :root {
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  
-  /* Color Palette (Deep dark mode with violet/indigo/rose gradients) */
+
   --bg-dark: #09090e;
   --bg-card: rgba(20, 20, 35, 0.45);
   --glass-border: rgba(255, 255, 255, 0.08);
@@ -43,8 +42,6 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-
-/* Background blob decorations for premium look */
 body::before {
   content: '';
   position: absolute;
@@ -68,15 +65,11 @@ body::after {
   z-index: -1;
   pointer-events: none;
 }
-
-/* App container */
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
-/* Navigation bar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -125,8 +118,6 @@ body::after {
   color: #a5b4fc;
   font-weight: 500;
 }
-
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -181,8 +172,6 @@ body::after {
   padding: 0.5rem;
   border-radius: 50%;
 }
-
-/* Forms and auth page layout */
 .auth-page {
   display: flex;
   align-items: center;
@@ -191,8 +180,6 @@ body::after {
   padding: 2rem;
   position: relative;
 }
-
-/* Glassmorphism Panel */
 .glass-panel {
   background: var(--bg-card);
   backdrop-filter: blur(20px);
@@ -222,8 +209,6 @@ body::after {
   margin-bottom: 2rem;
   font-size: 0.95rem;
 }
-
-/* Inputs */
 .form-group {
   margin-bottom: 1.5rem;
   display: flex;
@@ -277,8 +262,6 @@ body::after {
 .form-input:focus + svg {
   color: var(--accent-indigo);
 }
-
-/* Alerts */
 .alert {
   display: flex;
   align-items: center;
@@ -302,8 +285,6 @@ body::after {
   border: 1px solid rgba(16, 185, 129, 0.3);
   color: #a7f3d0;
 }
-
-/* Footer Link styling in forms */
 .auth-footer {
   margin-top: 1.5rem;
   text-align: center;
@@ -322,8 +303,6 @@ body::after {
   color: var(--accent-pink);
   text-decoration: underline;
 }
-
-/* Dashboard page layout */
 .dashboard-container {
   flex: 1;
   padding: 2.5rem;
@@ -346,8 +325,6 @@ body::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* Task creation card */
 .task-creator-card {
   background: var(--bg-card);
   backdrop-filter: blur(20px);
@@ -378,8 +355,6 @@ body::after {
     grid-template-columns: 1fr;
   }
 }
-
-/* Tasks Grid/List */
 .tasks-section {
   display: flex;
   flex-direction: column;
@@ -411,8 +386,6 @@ body::after {
   gap: 1rem;
   margin-top: 1rem;
 }
-
-/* Task card design */
 .task-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--glass-border);
@@ -548,8 +521,6 @@ body::after {
   gap: 0.5rem;
   align-items: center;
 }
-
-/* Empty State */
 .empty-state {
   display: flex;
   flex-direction: column;
@@ -575,8 +546,6 @@ body::after {
   color: var(--text-main);
   font-weight: 500;
 }
-
-/* Loading Spinner */
 .spinner {
   border: 3px solid rgba(255, 255, 255, 0.1);
   width: 2rem;
@@ -591,8 +560,6 @@ body::after {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-/* Animations */
 @keyframes floatIn {
   from {
     opacity: 0;
@@ -614,8 +581,6 @@ body::after {
     transform: translateY(0);
   }
 }
-
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
