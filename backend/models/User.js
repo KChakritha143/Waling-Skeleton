@@ -22,15 +22,12 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please enter a password'],
     minlength: [6, 'Password must be at least 6 characters long'],
-    select: true // Ensure password is selected by default, or we can control it explicitly
+    select: true 
   }
 }, {
   timestamps: true
 });
-
-// Pre-save hook: Salt and hash password using bcryptjs before saving
 UserSchema.pre('save', async function (next) {
-  // Only hash the password if it has been modified (or is new)
   if (!this.isModified('password')) {
     return next();
   }
@@ -43,8 +40,6 @@ UserSchema.pre('save', async function (next) {
     next(err);
   }
 });
-
-// Method to compare entered password with hashed password in database
 UserSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
