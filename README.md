@@ -245,6 +245,10 @@ Frontend URL
 http://localhost:5173
 ```
 
+## Live deployment
+
+Froentend : https://waling-skeleton.vercel.app/login
+Backend : 
 ## Testing
 
 Authentication routes can be tested using:
