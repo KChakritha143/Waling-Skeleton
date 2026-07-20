@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="card">
-          <h2>Backend API Server is Running! 🚀</h2>
+          <h2>Backend API Server is Running!</h2>
           <p>This is the backend server running on port <strong>5000</strong>.</p>
           <p>To view the website interface, please open the frontend URL:</p>
           <p><a href="http://localhost:5173" target="_blank" style="font-size: 1.2em;">http://localhost:5173</a></p>
