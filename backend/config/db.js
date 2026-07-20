@@ -19,6 +19,9 @@ const connectDB = async () => {
       }
 
       mongoServer = await MongoMemoryServer.create({
+        binary: {
+          version: '7.0.12',
+        },
         instance: {
           dbPath: dbPath,
           storageEngine: 'wiredTiger',
@@ -29,7 +32,6 @@ const connectDB = async () => {
     }
 
     const conn = await mongoose.connect(mongoUri);
-
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     console.error(`Database connection error: ${error.message}`);
