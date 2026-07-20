@@ -12,14 +12,10 @@ const Register = () => {
 
   const { register, error: authError, clearError, user } = useAuth();
   const navigate = useNavigate();
-
-  // Clear errors on initial load
   useEffect(() => {
     clearError();
     setValidationError('');
   }, []);
-
-  // Redirect if user logged in
   useEffect(() => {
     if (user) {
       navigate('/');
@@ -148,5 +144,4 @@ const Register = () => {
     </div>
   );
 };
-
 export default Register;
