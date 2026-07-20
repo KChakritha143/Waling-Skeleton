@@ -247,8 +247,8 @@ http://localhost:5173
 
 ## Live deployment
 
-Froentend : https://waling-skeleton.vercel.app/login
-Backend : https://waling-skeleton-4.onrender.com/
+- Frontend : https://waling-skeleton.vercel.app/login
+- Backend : https://waling-skeleton-4.onrender.com/
 
 ## Testing
 
