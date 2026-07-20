@@ -14,7 +14,6 @@ function App() {
         <div className="app-container">
           <Navbar />
           <Routes>
-            {/* Protected dashboard route */}
             <Route
               path="/"
               element={
@@ -23,12 +22,8 @@ function App() {
                 </ProtectedRoute>
               }
             />
-
-            {/* Public authentication routes */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-
-            {/* Fallback route */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
