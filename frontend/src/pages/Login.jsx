@@ -11,21 +11,16 @@ const Login = () => {
   const { login, error: authError, clearError, user } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-
-  // Clear any leftover auth errors from prior attempts
   useEffect(() => {
     clearError();
     setValidationError('');
   }, []);
-
-  // Redirect if already logged in
   useEffect(() => {
     if (user) {
       const from = location.state?.from?.pathname || '/';
       navigate(from, { replace: true });
     }
   }, [user, navigate, location]);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setValidationError('');
