@@ -13,8 +13,6 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [actionError, setActionError] = useState('');
   const [actionSuccess, setActionSuccess] = useState('');
-
-  // Fetch all tasks on component mount
   useEffect(() => {
     fetchTasks();
   }, []);
@@ -69,8 +67,6 @@ const Dashboard = () => {
       setPriority('medium');
       setDueDate('');
       setActionSuccess('Task created successfully');
-      
-      // Auto fade success message
       setTimeout(() => setActionSuccess(''), 3000);
     } catch (err) {
       setActionError(err.message);
@@ -150,7 +146,6 @@ const Dashboard = () => {
         </div>
       )}
 
-      {/* Task Creation Form */}
       <div className="task-creator-card">
         <h3>Create New Task</h3>
         <form onSubmit={handleAddTask} className="task-form-grid">
@@ -195,7 +190,6 @@ const Dashboard = () => {
             />
           </div>
 
-          {/* Subtext description box for premium feel */}
           <div className="form-group" style={{ gridColumn: '1 / -1', marginTop: '1rem', marginBottom: '1rem' }}>
             <label htmlFor="taskDescription">Task Description</label>
             <input
@@ -215,8 +209,6 @@ const Dashboard = () => {
           </button>
         </form>
       </div>
-
-      {/* Task List Section */}
       <div className="tasks-section">
         <div className="tasks-grid-header">
           <h2>Your Tasks</h2>
