@@ -277,14 +277,3 @@ Through this project I learned:
 - Context API State Management
 - Frontend and Backend Integration
 
-## Developer
-
-Name: Kandi Konda Chakritha
-
-Course: B.Tech CSE (AI & ML)
-
-Project: Secure Authentication & JWT Integration
-
-GitHub: https://github.com/KChakritha143
-
-LinkedIn: https://linkedin.com/in/kandi-konda-chakritha-439177262
