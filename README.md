@@ -1,4 +1,4 @@
-# Walking-Skeleton
+# Walking Skeleton
 # Secure Authentication & JWT Integration
 
 ## Project Overview
